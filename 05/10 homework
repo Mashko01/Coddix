@@ -1,0 +1,115 @@
+#include <stdio.h>
+
+int main(){
+signed char schar = -127;
+unsigned char uchar = 255;
+unsigned short int ushort= 63498;
+signed long slong = -9000000000000775845;
+
+printf("%c", schar);
+printf("%c", uchar);
+printf("%hd", ushort);
+printf("%ld", slong);
+
+ return 0;
+}
+ 
+ Втора задача:
+
+#include <stdio.h>
+
+int main(){
+short int sint = 24212;
+int integer = -1357674;
+int Integer = 1357674;
+int negativeInteger = -1357674000;
+unsigned int uint = 3657895000;
+
+printf("%hd", sint);
+printf("%d", integer);
+printf("%d", Integer);
+printf("%d", negativeInteger);
+printf("%u", uint);
+
+ return 0;
+}
+
+8. Да прочетем какво се случва със стойността на променливата x:
+char x = 8;
+x = x -2;
+x= x+ 6;
+x= x – 10 + 2;
+Каква ще бъде стойността на x, ако я отпечатаме на екрана след последната 
+калкулация? Символа който е изпринтен - ♦
+
+#include <stdio.h>
+
+int main(){
+float fchislo = 4.9876543;
+long double lldchislo = 7.123456789012345678890;
+float flchislo = 18398458438583853.28;
+long double ldchislo = 18398458438583853.39875937284928422;
+
+printf("%f\n", fchislo);
+printf("%Lf\n", lldchislo);
+printf("%f\n",flchislo);
+printf("%Lf\n", ldchislo);
+
+
+
+ return 0;
+}
+
+10. Представете си, че имате фирма за отдаване на каравани и кемпери под 
+наем, за която трябва да разработите софтуер. Вие сте малка фирма и имате 
+общо 3 каравани на цена 90 лв. на ден и 3 кемпера на цена 100 лв. на ден. 
+Декларирайте променливи за броя на караваните, цената на караваните, броя на 
+кемперите и цената им. Направете меню, което пита клиента каравана или 
+кемпер ще иска. Направете променлива, в която да се събират парите, които 
+клиента дължи на компанията. Принтирайте резултата.
+
+#include <stdio.h>
+
+int main(){
+short int sicaravans = 1;
+short int sicampers = 2;
+float fpriceCaravans = 90.00;
+float fpriceCampers = 100;
+float ftotalMoney = 0;
+short int days = 0;
+
+
+printf("What would you prefer?Caravan or Camper?"); // 1 or 2 in variables
+scanf("%hd",&sicampers,&sicaravans);
+printf("How many days will use it?");
+scanf("%hd", &days);
+
+if (sicampers = sicampers){
+ftotalMoney = sicampers + fpriceCampers + days;
+printf("It will cost you: \n");
+printf("%f", ftotalMoney);
+
+}
+
+else {
+ftotalMoney = sicaravans + fpriceCaravans + days;
+printf("It will cost you: \n");
+printf("%f", ftotalMoney);
+}
+
+
+
+ return 0;
+}
+
+Упражнение 14. Напишете програма, която изчислява броя на секундите в една 
+година.
+#include <stdio.h>
+int main()
+{long int hour,week,month,year;
+hour=60*60;
+week=7*24*hour;
+month=30*24*hour;
+year=365*24*hour;
+printf("seconds in 1 hour, 1 week, 1 month and 1 year are: %d,%d,%d,%d",hour,week,month,year);
+return 0;}
