@@ -1,0 +1,63 @@
+#include <stdio.h>
+#include <math.h>
+
+int main(){
+int iweight = 0;
+int fmoonWeight = 0;
+float percentWeight = 0.83;
+
+fmoonWeight = iweight * percentWeight;
+
+printf("Your weight on the Earth is: ");
+scanf ("%d", &iweight);
+printf("Your weight at the moon: ");
+printf("%d", fmoonWeight);
+ 
+
+ 
+
+ return 0;
+}
+
+
+#include <stdio.h>
+#include <math.h>
+
+int main(){
+int cups = 0;
+int onze = 0;
+int difference = 8;
+
+cups  = onze / difference ;
+
+printf("How many onzes do you need?");
+scanf ("%d", &onze);
+printf("The count of the cups is: ");
+printf("%d", cups);
+ 
+
+ 
+
+ return 0;
+}
+
+#include <stdio.h>
+#include <math.h>
+
+int main(){
+int jupiterYear = 0;
+int earthYears = 12;
+int result = 0;
+
+result  = jupiterYear * earthYears;
+
+printf("How many years on Jupiter?");
+scanf ("%d", &jupiterYear);
+printf("The count of the years is: ");
+printf("%d", result);
+ 
+
+ 
+
+ return 0;
+}
