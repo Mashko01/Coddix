@@ -1,0 +1,157 @@
+#include <stdio.h>
+
+int main(){
+
+char str[] = "Hello";
+
+str[0] == "o";
+str[1] == "l";
+str[2] == "l";
+str[3] == "e";
+str[4] == "H";
+str[5] == '\0';
+
+
+printf("%c",str);
+
+
+ return 0;
+}
+
+main.c:7:8: warning: comparison between pointer and integer
+ str[0] == "o";
+ 
+ Задача 12. Ако имаме символен низ char str[] = “Hеllo”, заменете
+буквите l с х на същия символен низ и отпечатайте резултата на
+конзолата.
+
+#include <stdio.h>
+
+int main(){
+
+char str[] = "Hello";
+
+str[0] == "H";
+str[1] == "x";
+str[2] == "l";
+str[3] == "l";
+str[4] == "o";
+str[5] == '\0';
+
+
+printf("%c",str);
+
+
+ return 0;
+}
+Резултата е "→"
+ 
+ Задача 13. Ако имаме символен низ char str[] = “HELLO”, заменете
+всичките символи с главна буква със съответните символи с
+малка буква.
+#include <stdio.h>
+
+int main(){
+
+char str[] = "HELLO";
+
+str[0] == "h";
+str[1] == "e";
+str[2] == "l";
+str[3] == "l";
+str[4] == "o";
+str[5] == '\0';
+
+
+printf("%c",str);
+
+
+ return 0;
+}
+Резултата е "→"
+
+
+Зада 14. Напишете глобална променлива, която увеличаваме с 1 във
+функция void test(). Извикайте функцията три пъти test() от main()
+принтирайте стойността на глобалната променлива.
+
+#include <stdio.h>
+
+int* test;
+
+main(){
+   *test = 0;
+}
+
+void incrementtest(){
+   ++*test;
+}
+
+int gettest(){
+   return *test;
+}
+
+
+Задача 15. Използвайте статична локална променлива, за да постигнете
+същото поведение, описано в задача 14.
+
+#include <stdio.h>
+static int test;
+
+    main(){
+       printf("%d",test);
+    }
+
+    void incrementTest(){
+       ++test;
+    }
+
+    int getTest(){
+       return test;
+    }
+    
+    Да се дефинира константата Пи (3.14159...) и да се напише
+функция, която изчислява лицето на окръжност по даден радиус (Пи * R * R).
+В main() да се извика горната функция с радиуси 1, 1.5, 13.
+#include <stdio.h>
+
+const double p = 3.14;
+int main()
+{
+float sum=0;
+float r;
+printf("Enter the radius of the circle\n");
+scanf("%f",&r);
+sum = p*r*r;
+printf("The area of a circle is %f\n",sum);
+return 0;
+}
+    Задача 17.* Към задача 16 да се добави втора функция, която изчислява
+лицето на елипса по зададени два параметъра ( Пи * A * B)
+#include <stdio.h>
+
+const double p = 3.14;
+int main()
+{
+float sum=0;
+float r = 0;
+float A = 0;
+float B = 0;
+float areaElipse = 0;
+printf("Enter the radius of the circle\n");
+scanf("%f",&r);
+sum = p*r*r;
+printf("The area of a circle is %f\n",sum);
+
+    printf("Enter length of A: ");
+    scanf("%f", &A);
+
+    printf("Enter length of B: ");
+    scanf("%f", &B);
+
+    areaElipse = p * A * B;
+
+    printf("Area of an ellipse = %0.4f", areaElipse);
+return 0;
+}
+    
